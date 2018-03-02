@@ -1,13 +1,15 @@
-class TeachersController < ApplicationController
+class StudentsController < ApplicationController
   def new
-    @placeholder_course = '186'
+    @placeholder_drink = 'Okinawa'
+    @placeholder_living ='South Side'
+    @placeholder_major = 'CS'
   end
 
   def create
     # Hint: params??
-    @full_name = params[:full_name]
-    @course = params[:course_name]
-    @grade_level = params[:grade_level]
+    @drink= params[:drink]
+    @living = params[:living]
+    @major = params[:major]
     # YOUR CODE HERE
 
 
